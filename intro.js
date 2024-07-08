@@ -34,7 +34,6 @@ function nextQuestion(questionIndex) {
   let currentQuestion = questions[questionIndex].question;
   questionElement.textContent = currentQuestion;
   buttonElements.forEach((button, buttonindex) => {
-    console.log(buttonindex, questions[questionIndex].choices[buttonindex]);
     button.textContent = questions[questionIndex].choices[buttonindex];
   });
 }
